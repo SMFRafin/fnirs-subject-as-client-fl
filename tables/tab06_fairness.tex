@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Subgroup performance of FedBN on 64 held-out target subjects with bootstrap 95\% confidence intervals. Groups with fewer than four subjects are omitted. Intervals are wide and the audit is descriptive, not a test of the absence of bias.}
+\label{tab:fair}
+\begin{tabular}{lcccc}
+\toprule
+Attribute & Group & n & bAcc & 95% CI \\
+\midrule
+age (median split) & lower & 42 & 0.631 & [0.556, 0.702] \\
+age (median split) & upper & 22 & 0.702 & [0.625, 0.777] \\
+gender & female & 39 & 0.708 & [0.641, 0.769] \\
+gender & male & 23 & 0.564 & [0.465, 0.659] \\
+sex_at_birth & female & 40 & 0.708 & [0.644, 0.768] \\
+sex_at_birth & male & 24 & 0.568 & [0.472, 0.661] \\
+ethnicity & asian & 31 & 0.658 & [0.579, 0.732] \\
+ethnicity & white & 25 & 0.689 & [0.601, 0.770] \\
+\bottomrule
+\end{tabular}
+\end{table}

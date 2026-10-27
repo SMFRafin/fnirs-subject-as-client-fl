@@ -1,0 +1,34 @@
+\begin{table}
+\caption{Balanced accuracy as a function of labelled windows from the target subject.}
+\label{tab:calib}
+\begin{tabular}{lccc}
+\toprule
+method & budget & mean & std \\
+\midrule
+FedAvg & 0 & 0.650 & 0.273 \\
+FedAvg & 8 & 0.616 & 0.295 \\
+FedAvg & 16 & 0.553 & 0.352 \\
+FedAvg & 32 & 0.584 & 0.326 \\
+FedAvg & 64 & 0.636 & 0.317 \\
+FedAvg & 128 & 0.631 & 0.321 \\
+FedBN & 0 & 0.651 & 0.280 \\
+FedBN & 8 & 0.620 & 0.300 \\
+FedBN & 16 & 0.555 & 0.352 \\
+FedBN & 32 & 0.589 & 0.330 \\
+FedBN & 64 & 0.639 & 0.313 \\
+FedBN & 128 & 0.632 & 0.321 \\
+FedPer & 0 & 0.644 & 0.280 \\
+FedPer & 8 & 0.619 & 0.297 \\
+FedPer & 16 & 0.549 & 0.351 \\
+FedPer & 32 & 0.579 & 0.333 \\
+FedPer & 64 & 0.643 & 0.316 \\
+FedPer & 128 & 0.631 & 0.319 \\
+FedPer (head-only) & 0 & 0.644 & 0.280 \\
+FedPer (head-only) & 8 & 0.628 & 0.265 \\
+FedPer (head-only) & 16 & 0.638 & 0.278 \\
+FedPer (head-only) & 32 & 0.640 & 0.276 \\
+FedPer (head-only) & 64 & 0.634 & 0.271 \\
+FedPer (head-only) & 128 & 0.640 & 0.275 \\
+\bottomrule
+\end{tabular}
+\end{table}

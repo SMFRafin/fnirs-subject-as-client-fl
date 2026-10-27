@@ -1,0 +1,31 @@
+\begin{table}
+\caption{Ablation study. Balanced accuracy on held-out target subjects, mean over 3 split replicates with standard error across replicates. Settings marked as diverged produced non-finite parameters in at least one replicate.}
+\label{tab:abl}
+\begin{tabular}{lcccccc}
+\toprule
+Ablation & Setting & Method & Reps & bAcc & SEM & Diverged \\
+\midrule
+Local epochs & 1 & FedBN & 3 & 0.6117 & 0.0506 &  \\
+Local epochs & 2 & FedBN & 3 & 0.6574 & 0.0569 &  \\
+Local epochs & 5 & FedBN & 3 & 0.6686 & 0.0762 &  \\
+Client fraction & 0.2 & FedBN & 3 & 0.6306 & 0.0471 &  \\
+Client fraction & 0.4 & FedBN & 3 & 0.6574 & 0.0569 &  \\
+Client fraction & 0.8 & FedBN & 3 & 0.6056 & 0.0674 &  \\
+FedProx $\mu$ & 0.001 & FedProx & 3 & 0.6532 & 0.0572 &  \\
+FedProx $\mu$ & 0.01 & FedProx & 3 & 0.6555 & 0.0555 &  \\
+FedProx $\mu$ & 0.1 & FedProx & 3 & 0.6513 & 0.0607 &  \\
+Per-client norm. & off & FedAvg & 3 & 0.6369 & 0.0602 &  \\
+Per-client norm. & on & FedAvg & 3 & 0.6512 & 0.0561 &  \\
+Update noise $\sigma$ & 0 & FedBN & 3 & 0.6574 & 0.0569 &  \\
+Update noise $\sigma$ & 0.05 & FedBN & 3 & 0.6403 & 0.0432 &  \\
+Update noise $\sigma$ & 0.1 & FedBN & 3 & 0.5829 & 0.0349 &  \\
+Update noise $\sigma$ & 0.25 & FedBN & 3 & 0.5725 & 0.0787 &  \\
+Update noise $\sigma$ & 0.5 & FedBN & 3 & 0.5524 & 0.0470 &  \\
+Update noise $\sigma$ & 1 & FedBN & 3 & 0.5908 & 0.0441 &  \\
+Architecture & deepconv & FedBN & 3 & 0.6658 & 0.0672 &  \\
+Architecture & fnirsnet & FedBN & 3 & 0.6574 & 0.0569 &  \\
+Architecture & gru & FedBN & 3 & 0.6335 & 0.0733 &  \\
+Architecture & tinytx & FedBN & 3 & 0.6966 & 0.0605 &  \\
+\bottomrule
+\end{tabular}
+\end{table}

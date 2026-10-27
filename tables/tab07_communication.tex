@@ -1,0 +1,15 @@
+\begin{table}
+\caption{Per-round uplink cost. FedPer and FedBN transmit only the shared block.}
+\label{tab:comm}
+\begin{tabular}{lccccc}
+\toprule
+Method & shared_params & total_params & MB_per_client_round & shared_frac & MB_total_uplink \\
+\midrule
+FedAvg & 19090.000 & 19090.000 & 0.076 & 1.000 & 68.724 \\
+FedProx & 19090.000 & 19090.000 & 0.076 & 1.000 & 68.724 \\
+FedAff & 19074.000 & 19090.000 & 0.076 & 0.999 & 68.666 \\
+FedBN & 18434.000 & 19090.000 & 0.074 & 0.966 & 66.362 \\
+FedPer & 18944.000 & 19090.000 & 0.076 & 0.992 & 68.198 \\
+\bottomrule
+\end{tabular}
+\end{table}

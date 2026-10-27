@@ -1,0 +1,59 @@
+{
+  "generated": "2026-10-26 05:25:52",
+  "n_subjects": 68,
+  "n_windows": 50592,
+  "n_channels": 8,
+  "task_labels": [
+    0,
+    2
+  ],
+  "seeds": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037
+  ],
+  "train_clients": 38,
+  "val_subjects": 16,
+  "test_subjects": 14,
+  "guard_chunks": 50,
+  "rounds": 60,
+  "figures": [
+    "fig01_dataset_overview.pdf",
+    "fig02_grand_average_response.pdf",
+    "fig03_noniid_characterisation.pdf",
+    "fig04_convergence.pdf",
+    "fig05_per_subject_boxplot.pdf",
+    "fig06_critical_difference.pdf",
+    "fig07_calibration_budget.pdf",
+    "fig08_ablations.pdf",
+    "fig08a_ablations_optimisation.pdf",
+    "fig08b_ablations_deployment.pdf",
+    "fig09_heterogeneity_vs_gain.pdf",
+    "fig10_fairness_audit.pdf",
+    "fig11_confusion_roc.pdf"
+  ],
+  "tables": [
+    "client_heterogeneity.csv",
+    "per_subject_results.csv",
+    "subject_meta.csv",
+    "tab01_main_comparison.tex",
+    "tab02_significance.tex",
+    "tab03_calibration.tex",
+    "tab04_ablations.tex",
+    "tab05_heterogeneity_corr.tex",
+    "tab06_fairness.tex",
+    "tab07_communication.tex"
+  ],
+  "n_experiments": 251,
+  "torch": "2.10.0+cu128",
+  "device": "cuda"
+}
